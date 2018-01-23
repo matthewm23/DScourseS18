@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{Lab 1}
+\author{Matt Mullins }
+\date{18 January 2018}
+
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\section{Introduction about Matt}
+
+I have always been interested in how economics can be used to solve problems, but there has never been a specific area of economics that has appealed to me more than any of the others. With that in mind, if I was ever to study a field in economics I would want to do interesting experiments to answer unlikely questions like the economist Steven Levitt does in his Freakonomics books. Those books are what first peaked my interest in economics.I am really excited about taking this class for two mains reasons: One, I am interested in becoming more proficient with programming for both personal and professional reasons. I think no matter where my life takes me these will be useful skills and allow me to be more successful in anything I do. Two, because I am still considering pursuing PHD in Economics in the future, I would like to challenge myself with the best econ courses available so that I could potentially be a competitive applicant someday. I think professor Ransom is teaching the most innovative class in the Econ department and I wanted to take part in learning the new school methods of economics. I would like to do a project that is energy related whether it has something to do with price fluctuations, oil rig failures, dry-hole analysis, etc. I am not 100 percent sure and will continue to brainstorm, as well as set up an appointment to discuss soon. My goals for this class are to build a really solid foundation in programming practice and to better understand the nuances of data science so that I can have a better discover where I can continue sharpening my skills and improving. After I graduate I will be moving to Houston to work for British Petroleum (BP) on their trade floor. I will start out as an analyst where I plan to show off many of the skills I will learn in this class.
+
+
+\section{Conclusion}
+I am really excited about this semester and this class in particular and I am pumped for the awesome stuff we will learn!
+
+
+\section{Equation}
+$\mathbf{a^2 + b^2 = c^2 }$
+
+
+\end{document}
