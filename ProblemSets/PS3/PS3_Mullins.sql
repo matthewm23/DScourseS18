@@ -18,7 +18,7 @@ CREATE TABLE "florInsur" (
 	frsitededuct INTEGER,
 	ptlat INTEGER,
 	ptlong INTEGER,
-	line CHAR,
+	cline CHAR,
  	construct CHAR, 
 	pointgran INTEGER 
 
