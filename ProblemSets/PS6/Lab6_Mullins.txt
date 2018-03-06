@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Lab6}
+\author{Matthew Mullins }
+\date{04 March 2018}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Description}
+ 1. Image 1 was created to help better understand the magnitude of difference each team has in the number of points per game that they are averaging so far in the 2018 year. Looking at the side by side in a matrix really does not allow for the viewer to truly see how wide a dispersion that there truly is. This way, I can see the wide range and can then compare these findings with the next graphs to get a better idea of how this one statistic is related to team success.
+ \newline
+ \newline
+ 2. Image 2 is a great foundation for the study. This graphic is showing all of the wins for each team in the Western NBA conference thus far in this 2018 NBA season. I believe it does a great job of allowing the user to see which teams are far ahead and far behind in terms of wins compared to their opponents. Furthermore, this data and graphic will then be used to compare other pieces of information side by side so we can look for factors as to why some teams have more wins than others. Hopefully this will allow us to located indicators of team success.
+ \newline
+ \newline
+ 3. Image 3 was a cool way of looking at a teams true or actual wins, compared to the projected numbers of wins that they were expected to have at this point in the season. What this graphic really does a great job of showing is how right or close the experts seem to be at assessing a teams probability of success before the season begins! This is clearly depicted in the positive relation shown in the graph and I will break this data down even further as I begin my research. 
+
+
+\section{Visuals}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 6cm]{Graph1}
+\caption{Graph 1}
+\label{fig:Graph 1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 6cm]{Graph2}
+\caption{Graph 2}
+\label{fig:Graph 2}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 6cm]{Graph3}
+\caption{Graph 3}
+\label{fig:Graph 3}
+\end{figure}
+
+\end{document}
