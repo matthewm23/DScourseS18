@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Lab 7}
+\author{matthew.mullins33 }
+\date{March 2018}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\maketitle
+
+Note: I did not know that stargazer was not compatible with rjags until after completing all of my work in R and I was forced to paste the images into the document instead of using LATEX. My apologies!
+
+\section{Regression Analysis}
+
+Original Data after factor conversion:
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Tue, Mar 13, 2018 - 08:41:06
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+logwage & 1,669 & 1.625 & 0.386 & 0.005 & 2.261 \\ 
+hgc & 2,229 & 13.101 & 2.524 & 0 & 18 \\ 
+college & 2,229 & 0.238 & 0.426 & 0 & 1 \\ 
+tenure & 2,229 & 5.971 & 5.507 & 0.000 & 25.917 \\ 
+age & 2,229 & 39.152 & 3.062 & 34 & 46 \\ 
+married & 2,229 & 0.642 & 0.480 & 0 & 1 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+\newline
+\newline
+Log wages seem to be missing in every ~ 1/5 (560 NAs total). I beleive that the logwage variable is most likely missing not at random. It is most likely the case that the sample includes a good portion of people who are not employed for various reasons and is not contradictory to current US unemployment rates because this sample could include individuals who are not actively seeking work, which could explain the high percentage of those not reporting a salary. 
+
+
+\section{Regression 1 Results}
+
+\usepackage[export]{adjustbox}
+\includegraphics[width=0.9\linewidth, center]{Graph1}
+\newline
+\newline
+\caption{Model 1: Results from regression after list-wise deletion}
+
+
+\section{Regression 2 Results}
+
+\usepackage[export]{adjustbox}
+\includegraphics[width=0.9\linewidth, center]{Graph2}
+\newline
+\newline
+\caption{Model 2: Results from regression after mean imputation}
+
+\section{Regression Model 3}
+
+\usepackage[export]{adjustbox}
+\includegraphics[width=0.9\linewidth, center]{Graph3}
+\newline
+\newline
+\caption{Model 3: Results from regression after missing at random assumption}
+
+
+\section{Regression Model 4}
+
+\usepackage[export]{adjustbox}
+\includegraphics[width=0.9\linewidth, center]{Graph4} 
+\newline
+\newline
+\caption{Model 4: Results from regression after mice multiple imputation}
+
+\section{Results}
+Since the true value of Beta1 hat is ~ 0.093, it appears that my linear regression models have all significantly underestimated the significance of Beta1 on Salary. This may be the result of using a Gibbs Sampling (JAGS) approach to the regression analysis (see R code), but it could also mean that my data was not as carefully cleaned, or oppositely, was adjusted too much. It is worth noting that the regression using the mice package and not a Gibbs sampler returns a slightly higher Beta1 in my various trials, not all listed, but may further suggest that the Bayesain approach is not ideal. I definitely see a convergence to around .05-0.6 for Beta1, all positive, signifying that there is a positive return on investment for schooling. However, this percentage is not nearly as enticing as the expected .09-.1 ROI. 
+
+I was really interested specifically in why Beta2 would be negative, indicating that college had a negative impact on salary, but combing through the data I noticed that a significant portion of the sample that did not report their wages also were the ones who reported being college educated. This may suggest that they prefer to keep higher or lower salaries private and means that the model is not representing the sample accurately. 
+
+Using the different imputation methods and seeing the impact each has on the created model has made me much more aware of the importance of first understanding your data before just diving in to clean and analyze it. If you are going to go as far as to remove complete rows of data you should have a very concrete reason for doing so or it will seem as if the data has been skewed to find a specific result. The other two methods can have similiar effects, but I do not think they would be as severe. 
+
+\section{Project Results}
+For my project I have been collecting data from the past 7 years on the movements of free agents, team wins, scoring, total championships, best ranked places to live, coach success, etc. Most of this data is relatively easy to collect from pro-sport sites like ESPN.com. Just looking at the data I can already make some hypothesis about the types of results I am going to get. 
+
+I am still deciding on my modeling approaches, but would definitely like to incorporate both Bayesian and more traditional regression models into my work. A few models that come to mind are using Gibbs sampling for a quadratic and SLR model. Additionally, I think I will also try to use a GLS model to account for heteroskedasticity. 
+
+
+\end{document}
