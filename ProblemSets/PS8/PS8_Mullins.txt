@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{Problem Set 8}
+\author{Matt Mullins }
+\date{March 2018}
+\usepackage{natbib}
+\usepackage{graphicx}
+\begin{document}
+\maketitle
+\section{Task 5}
+Question: How does the closed-form estimate compare with the true value of beta in (1)?
+\newline
+Answer: The results from the closed-form solution, rounded to 4 decimal places are extremely accurate when compared with the true value of Beta that we are given. We would expect this result from a closed form solution since we do not have to guess and check various parameters to find the minimum or maximum. 
+\section{Task 7}
+Question:After computing beta using both the L-BFGS and Nelder-Mead algorithms, how do they compare?
+\newline
+Answer: For the L-BFGS algorithm, after inputting the same objective function and gradient used in task 6, our results are nearly identical to the true Beta. 
+However, when we use the same objective and gradient functions for the Nelder-Mead algorithm we get incorrect results for every iteration of beta after the first one. There are a few reasons that the results are incorrect. One is that the NLOPT function minimizes, so we need to write the function as a negative log likelihood. The second is that we must slice our vector into beta and sigma components for both the objective function and the gradient. After running this model with the previous mentioned changes, we receive results that are very close to the true values of beta. 
+\section{Task 9}
+Question: How similar are my estimates of beta hat compared to the "ground truth" beta used to create the data?
+\newline
+For the linear model from task 9, we can see from the table that our estimates of beta are very close to the "True Value" from the beta in part 1. 
+\newline
+Overall in this lab, each of the various methods are able to provide us with adequate estimates of beta that are close to the true values. The major takeaways are that: 1. There are both easy and complicated ways to calculate beta, it just depends on what decimal of precision the user is looking for (i.e. the algorithms from task 7). 2. Understanding the underlying workings of each of the methods is critical in order to create the appropriate models. If you are not able to think logically about what is happening then the task because very difficult as the methods increase in complexity. 
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Y \\ 
+\hline \\[-1.8ex] 
+ X1 & 1.501$^{***}$ \\ 
+  & (0.002) \\ 
+ X2 & $-$0.996$^{***}$ \\ 
+  & (0.002) \\ 
+ X3 & $-$0.249$^{***}$ \\ 
+  & (0.002) \\ 
+ X4 & 0.747$^{***}$ \\ 
+  & (0.002) \\ 
+ X5 & 3.502$^{***}$ \\ 
+  & (0.002) \\ 
+ X6 & $-$1.999$^{***}$ \\ 
+  & (0.002) \\ 
+ X7 & 0.501$^{***}$ \\ 
+  & (0.002) \\ 
+ X8 & 0.999$^{***}$ \\ 
+  & (0.002) \\ 
+ X9 & 1.253$^{***}$ \\ 
+  & (0.002) \\ 
+ X10 & 1.999$^{***}$ \\ 
+  & (0.002) \\ 
+ 
+\hline \\[-1.8ex] 
+Observations & 100,000 \\ 
+R$^{2}$ & 0.991 \\ 
+Adjusted R$^{2}$ & 0.991 \\ 
+Residual Std. Error & 0.500 (df = 99990) \\ 
+F Statistic & 1,080,712.000$^{***}$ (df = 10; 99990) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+\end{document}
