@@ -95,6 +95,7 @@ Final grades will be assigned according to the standard cutoffs (90%+ for an A, 
     * Turn in the written summary report and a GitHub repository containing all materials required to reproduce the results
     * Summary report should be written in LaTeX or RMarkdown and turned in as a PDF (source code for the summary report should also be included in your GitHub repository)
     * An example of what the final product should look like is [here](https://github.com/tyleransom/DScourseS18/blob/master/FinalProject/ExampleProject.pdf), with LaTeX source code [here](https://github.com/tyleransom/DScourseS18/blob/master/FinalProject/ExampleProject.tex) and BibTeX source code [here](https://github.com/tyleransom/DScourseS18/blob/master/FinalProject/References.bib).
+    * A detailed rubric for the final project is [here](https://github.com/tyleransom/DScourseS18/blob/master/FinalProject/README.md)
 
 ## Communication ##
 
@@ -116,6 +117,7 @@ Final grades will be assigned according to the standard cutoffs (90%+ for an A, 
 | Feb 6  | T   | Sampling & storing Big Data ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/DatabaseMgmt/HadoopSpark.md)) | [PS 3](https://github.com/tyleransom/DScourseS18/blob/master/DatabaseMgmt/PS3.pdf) |
 | Feb 8  | Th  | Web scraping/APIs to gather data ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/WebData/README.md)) |  |
 | Feb 13 | T   |  Web scraping/APIs to gather data ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/WebData/README.md)) | [PS 4](https://github.com/tyleransom/DScourseS18/blob/master/DatabaseMgmt/PS4.pdf) |
+<<<<<<< HEAD
 | Feb 15 | Th  | No class (career fair)                           |                                                                                                                                |
 | Feb 20 | T   | Getting to know your data: descriptive statistics, cleaning, tips, tricks, and transformations                                | [PS 5](https://github.com/tyleransom/DScourseS18/blob/master/WebData/PS5.pdf) |
 | Feb 22 | Th  | Getting to know your data: visualization                                            |                                                                                                                                |
@@ -140,6 +142,32 @@ Final grades will be assigned according to the standard cutoffs (90%+ for an A, 
 | May 1  | T   | Final Project presentations                                   |                                                                                                                                |
 | May 3  | Th  | Final Project presentations                                   |                                                                                                                                |
 | May 8  | T   | Final Exam (in class, 1:30-3:30pm)                            | Final project due                                                                                                              |
+=======
+| Feb 15 | Th  | No class: career fair ([Julia notes](https://github.com/jmxpearson/duke-julia-ssri/blob/master/intro_slides.ipynb))                           |                                                                                                                                |
+| Feb 20 | T   | No class (snow day)                           | [PS 5](https://github.com/tyleransom/DScourseS18/blob/master/WebData/PS5.pdf) |
+| Feb 22 | Th  | No class (snow day)                           |                                                                                                                                |
+| Feb 27 | T   | Getting to know your data: descriptive statistics, cleaning, tips, tricks, transformations, visualization ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/Visualization/README.md); [HTML slides](https://github.com/tyleransom/DScourseS18/blob/master/Visualization/slides.html)) |   |
+| Mar 1  | Th  | Modeling continuous and discrete variables ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/ModelingOptimization/README.md)) [HTML slides](https://github.com/tyleransom/DScourseS18/blob/master/ModelingOptimization/slides.html)) |   |
+| Mar 6  | T   | Introduction to optimization ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/ModelingOptimization/OptimizationIntro.pdf)) | [PS 6](https://github.com/tyleransom/DScourseS18/blob/master/Visualization/PS6.pdf) |
+| Mar 8  | Th  | Writing and optimizing functions in R, Python, and Julia ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/ModelingOptimization/OptimizationCodingBasics.md))   |    |
+| Mar 13 | T   | Writing and optimizing functions in R, Python, and Julia  ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/ModelingOptimization/OptimizationCodingBasics.md))  | [PS 7](https://github.com/tyleransom/DScourseS18/blob/master/ModelingOptimization/PS7.pdf) |
+| Mar 15 | Th  | Debugging strategies and simulations ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/ModelingOptimization/SimulationNotes.md))                           |                                                                                                                                |
+| Mar 20 | T   | No class (Spring break)                                       |                                                                                                                                |
+| Mar 22 | Th  | No class (Spring break)                                       |                                                                                                                                |
+| Mar 27 | T   | Intro to Machine Learning ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/MachineLearning/README.md#machine-learning)) | [PS 8](https://github.com/tyleransom/DScourseS18/blob/master/ModelingOptimization/PS8.pdf) |
+| Mar 29 | Th  | Supervised ML: Regularization, measuring model fit, tuning with cross-validation, the elastic net model ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/MachineLearning/README.md#bias-variance-tradeoff)) |                                                                                                                                |
+| Apr 3  | T   | Supervised ML: The 5 Tribes of Machine Learning ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/MachineLearning/README.md#the-5-tribes-of-machine-learning)) | [PS 9](https://github.com/tyleransom/DScourseS18/blob/master/MachineLearning/PS9.pdf) |
+| Apr 5  | Th  | Unsupervised ML: k-means clustering ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/MachineLearning/README.md)) |                                                                                                                                |
+| Apr 10 | T   | Unsupervised ML: Principle components analysis ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/MachineLearning/README.md)) | PS 10                                                                                                                          |
+| Apr 12 | Th  | Machine learning vs. econometrics ([Notes](https://github.com/tyleransom/DScourseS18/blob/master/MachineLearning/README.md)) |                                                                                                                                |
+| Apr 17 | T   | Structural modeling                                           | PS 11                                                                                                                          |
+| Apr 19 | Th  | Structural modeling                                           |                                                                                                                                |
+| Apr 24 | T   | Field Trip to Sonic HQ | PS 12  |
+| Apr 26 | Th  | Final Project presentations ([Rubric](https://github.com/tyleransom/DScourseS18/blob/master/FinalProject/README.md)) | |
+| May 1  | T   | Final Project presentations  ([Rubric](https://github.com/tyleransom/DScourseS18/blob/master/FinalProject/README.md)) | |
+| May 3  | Th  | Final Project presentations   ([Rubric](https://github.com/tyleransom/DScourseS18/blob/master/FinalProject/README.md)) |  |
+| May 8  | T   | Final Exam (in class, 1:30-3:30pm)                            | Final project due ([Scoresheet](https://github.com/tyleransom/DScourseS18/blob/master/FinalProject/Scoresheet.pdf)) |
+>>>>>>> upstream/master
 
 
 ## Helpful Links ##
@@ -149,6 +177,12 @@ Final grades will be assigned according to the standard cutoffs (90%+ for an A, 
 * [R data wrangling cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 * [R tidyverse](https://www.tidyverse.org)
 * [Julia vs. Python for Data Science](https://www.infoworld.com/article/3241107/python/julia-vs-python-julia-language-rises-for-data-science.html)
+<<<<<<< HEAD
+=======
+* [Machine Learning "Mind Map"](https://github.com/dformoso/machine-learning-mindmap/blob/master/Machine%20Learning.pdf)
+* [JP Morgan massive overview of Big Data & Machine Learning](http://www.valuesimplex.com/articles/JPM.pdf)
+* [Why it's becoming increasingly more difficult to learn to program](https://developers.slashdot.org/story/18/02/17/0947212/learning-to-program-is-getting-harder)
+>>>>>>> upstream/master
 
 ## Books ##
 
